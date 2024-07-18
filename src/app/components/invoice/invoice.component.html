@@ -1,7 +1,7 @@
 <div class="container">
   <div class="card my-3">
     <div class="card-header">
-      <h2>Factura</h2>
+      <h2>Factura #{{ invoice.id }} - {{ invoice.name }}</h2>
     </div>
     <div class="card-body">
       <div>
@@ -15,7 +15,7 @@
         <div class="col">
           <h3>Datos de Cliente</h3>
           <ul class="list-group">
-            <li class="list-group-item">{{ invoice.client.name }} {{ invoice.client.lastname }}</li>
+            <li class="list-group-item active">{{ invoice.client.name }} {{ invoice.client.lastname }}</li>
             <li class="list-group-item">
               {{ invoice.client.address.country }} /
               {{ invoice.client.address.city }}
