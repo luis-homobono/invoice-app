@@ -15,7 +15,6 @@ import { RowItemComponent } from '../row-item/row-item.component';
     ClientViewComponent,
     CompanyViewComponent,
     InvoiceItemsComponent,
-    RowItemComponent,
   ],
   templateUrl: './invoice.component.html',
 })

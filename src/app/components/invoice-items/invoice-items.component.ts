@@ -1,9 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Item } from '../../models/item';
+import { RowItemComponent } from '../row-item/row-item.component';
 
 @Component({
-  selector: 'app-invoice-items',
+  selector: 'invoice-items',
   standalone: true,
-  imports: [],
+  imports: [RowItemComponent],
   templateUrl: './invoice-items.component.html',
 })
-export class InvoiceItemsComponent {}
+export class InvoiceItemsComponent {
+  @Input() items!: Item[];
+}
