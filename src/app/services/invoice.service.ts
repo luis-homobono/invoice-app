@@ -21,6 +21,9 @@ export class InvoiceService {
     //   total += item.total();
     // });
     // return total;
-    return this.invoice.items.reduce((accum, item) => accum + item.total(), 0);
+    return this.invoice.items.reduce(
+      (accum, item) => accum + item.price * item.quantity,
+      0,
+    );
   }
 }

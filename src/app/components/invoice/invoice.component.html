@@ -13,9 +13,8 @@
           <company-view [company]="invoice.company"/>
         </div>
       </div>
-        <invoice-items [items]="invoice.items"/>
-      <div>
-      </div>
+      <invoice-items [items]="invoice.items"/>
+      <total [total]="invoice.total" />
     </div>
   </div>
 </div>
